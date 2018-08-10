@@ -7,6 +7,10 @@ import java.util.Scanner;
 
 public class Task9 implements Task {
     public static void main(String[] args) {
+        System.out.println("The goal: We have n days and for each day (d) you could either perform a high effort tasks (hi) or" +
+                " a low effort tasks (li) or no task with the constraint (it is written 0) that" +
+                " you can choose a high-effort tasks only if you chose no task on the previous day." +
+                " Write a program to find the maximum amount of cost you can perform within these n days.");
         Scanner in = new Scanner(System.in);
         System.out.print("Please, enter number of days:");
         int n = in.nextInt();

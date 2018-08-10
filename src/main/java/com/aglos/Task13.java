@@ -12,6 +12,8 @@ import java.util.Scanner;
 public class Task13 implements Task {
 
     public static void main(String[] args) {
+        System.out.println("Goal: Given a fence with n posts and k colors, " +
+                "find out the number of ways of painting the fence such that at most 2 adjacent posts have the same color. ");
         System.out.print("Please, enter number of posts:");
         Scanner in = new Scanner(System.in);
         int n = 0, k = 0;
