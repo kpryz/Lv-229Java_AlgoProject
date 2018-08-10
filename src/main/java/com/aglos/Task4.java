@@ -10,16 +10,23 @@ import java.util.Scanner;
 public class Task4 implements Task{
 
     /**
+     * ArrayList for the longest query row
+     */
+    private static ArrayList<Integer> longestQueryList = new ArrayList<Integer>();
+    /**
      * Main function
      *
      * @param numbers Integer array - random int numbers, written through comma
      * @return Integer value - quantity of the longest subsequence with difference one
      */
-    public static int runTaskFour(String numbers) {
+    public static int runTaskFour(int[] numbers) {
 
         ArrayList<Integer> nums = new ArrayList<Integer>();
-        for (String retval : numbers.split(",")) {
-            nums.add(Integer.valueOf(retval));
+//        for (String retval : numbers.split(",")) {
+//            nums.add(Integer.valueOf(retval));
+//        }
+        for (int i=0;i<numbers.length;i++){
+            nums.add(numbers[i]);
         }
         ArrayList<ArrayList> listOfArray = new ArrayList<ArrayList>();
 
@@ -58,6 +65,7 @@ public class Task4 implements Task{
             }
         }
         ArrayList<Integer> finalList = new ArrayList<Integer>();
+
         finalList = (ArrayList<Integer>) listOfArray.get(counter).clone();
 
 //        for (int e :
@@ -68,16 +76,36 @@ public class Task4 implements Task{
         int[] arr = new int[finalList.size()];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = finalList.get(i).intValue();
+            longestQueryList.add(arr[i]);
            // System.out.println("Our array:" + arr[i]);
         }
+
+//        int[] corectArr= new int[1];
+//        corectArr[0]=arr.length;
         return arr.length;
     }
 
     @Override
     public void solveTask() {
-        Scanner scan = new Scanner(System.in);
-        System.out.print("Enter your string of numbers, in format like<1,3,4,6,7,3>: ");
-        String s = scan.next();
-        runTaskFour(s);
+        Scanner input = new Scanner(System.in); // Объявляем Scanner
+
+        System.out.println("Enter array length: ");
+        int size = input.nextInt();
+        int array[] = new int[size];
+        System.out.println("Insert array elements:");
+
+        for (int i = 0; i < size; i++) {
+            System.out.print("Array element["+(i+1)+"]:");
+            array[i] = input.nextInt();
+        }
+
+        System.out.println("The longest query have size:"+runTaskFour(array));
+        System.out.println("This query contain those integers:");
+        for (int e:
+                longestQueryList){
+            System.out.print(e+"; ");
+        }
+        System.out.println();
+
     }
 }
