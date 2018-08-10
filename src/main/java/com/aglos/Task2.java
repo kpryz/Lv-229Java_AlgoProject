@@ -30,7 +30,6 @@ public class Task2 implements Task {
                 throw new Exception("Input value is less than 0 or too big");
             } catch (Exception e) {
                 System.out.println(e.getMessage());
-                e.printStackTrace();
             }
         }
         double f = 0;
