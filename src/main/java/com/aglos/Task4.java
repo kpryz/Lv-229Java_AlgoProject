@@ -88,7 +88,9 @@ public class Task4 implements Task{
     @Override
     public void solveTask() {
         Scanner input = new Scanner(System.in); // Объявляем Scanner
-
+        System.out.println("Next method finds how many numbers we have with difference one in the maximum sub sequence" +
+                "\n" +
+                "You should input: sequence with integer numbers ");
         System.out.println("Enter array length: ");
         int size = input.nextInt();
         int array[] = new int[size];
@@ -100,7 +102,7 @@ public class Task4 implements Task{
         }
 
         System.out.println("The longest query have size:"+runTaskFour(array));
-        System.out.println("This query contain those integers:");
+        System.out.print("This query contain those integers: ");
         for (int e:
                 longestQueryList){
             System.out.print(e+"; ");

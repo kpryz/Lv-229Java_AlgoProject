@@ -57,10 +57,10 @@ public class Task3 implements Task{
     public void solveTask() {
         Scanner scan = new Scanner(System.in);
         System.out.println(
-                "Next method finds which is the member of position (n) in our Jacobstal row."
+                "Next method finds which is the member of position (n) in our Jacobstal row.\nJacobstal row looks like: 1 1 3 5 11 21 ...\nYou should enter only 1 integer number(position)"
         );
         System.out.print("Enter your number: ");
         int s = scan.nextInt();
-        runTaskThree(s);
+        System.out.println("Element in position["+ s+ "]is:"+ runTaskThree(s));
     }
 }
