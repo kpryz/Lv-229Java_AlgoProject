@@ -37,7 +37,7 @@ public class Task8 implements Task {
      * @param n The number of points
      * @return The amount of paths without crossing
      */
-    public int catalanDP(int n) {
+    public static int catalanDP(int n) {
         int[] catalan = new int[n + 1];
 
         catalan[0] = catalan[1] = 1;

@@ -31,7 +31,7 @@ public class Task6 implements Task{
      * @param n The number which has to be represented
      * @return The amount of the ways to sum up a number
      */
-    public int countWays(int n) {
+    public static int countWays(int n) {
         int table[] = new int[n + 1];
         Arrays.fill(table, 0);
         table[0] = 1;
