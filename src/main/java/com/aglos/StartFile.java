@@ -9,6 +9,9 @@ import java.util.Scanner;
 public class StartFile {
     public static final int TASK_COUNT = 14;
     public static void main(String[] args) {
+
+        Task5 task5=new Task5();
+        task5.solveTask();
         Map<Integer, Task> tasks = new HashMap<Integer, Task>();
         int i = 1;
         tasks.put(i++, new Task1());
