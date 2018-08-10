@@ -10,6 +10,7 @@ public class Task7 implements Task {
 
     @Override
     public void solveTask() {
+        System.out.println("The goal: Calculate our possibility to cover the distance with 1, 2 and 3 steps.");
         System.out.println("Enter the distance: ");
         Scanner scanner = new Scanner(System.in);
         int distance = scanner.nextInt();

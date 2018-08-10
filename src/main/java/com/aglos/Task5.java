@@ -40,6 +40,7 @@ public class Task5 implements Task {
 
     @Override
     public void solveTask() {
+        System.out.println("The goal: To find how many ways we have to represent one number with a given array of numbers");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input the number which has to be represented");
         int num = scanner.nextInt();
