@@ -13,7 +13,7 @@ class Task1 implements Task {
      * @param n number entered by user
      * @return result of counting task 'Fibonacci'
      */
-    private static int fibonacci(int n) {
+    public static int fibonacci(int n) {
 
         int f[] = new int[n + 2];
         int i;
