@@ -7,7 +7,7 @@ import java.util.Scanner;
  * Author: Mykhailo Dzhura
  */
 
-public class Task3 implements Task{
+public class Task3 implements Task {
 
     /**
      * ArrayList for Jacobstal row
@@ -61,6 +61,6 @@ public class Task3 implements Task{
         );
         System.out.print("Enter your number: ");
         int s = scan.nextInt();
-        System.out.println("Element in position["+ s+ "]is:"+ runTaskThree(s));
+        System.out.println("Element in position[" + s + "]is:" + runTaskThree(s));
     }
 }

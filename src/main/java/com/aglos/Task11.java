@@ -6,7 +6,7 @@ package com.aglos;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-class Task11 implements Task{
+class Task11 implements Task {
 
     @Override
     public void solveTask() {
@@ -42,7 +42,7 @@ class Task11 implements Task{
      * @param n number entered by user
      * @return result of counting task 'Friend pairings'
      */
-   static int countFriendsPairings(int n) {
+    static int countFriendsPairings(int n) {
         int dp[] = new int[n + 1];
 
         for (int i = 0; i <= n; i++) {

@@ -13,19 +13,18 @@ import java.util.Scanner;
  * Goal: Given a fence with n posts and k colors,
  * find out the number of ways of painting the fence
  * such that at most 2 adjacent posts have the same color.
- *
+ * <p>
  * Example: We have 4 colors and 2 posts.
  * Ways when both posts have same color : 4
  * Ways when both posts have diff color :
  * 4*(choices for 1st post) * 3(choices for
  * 2nd post) = 12
- *
+ * <p>
  * Then the output must be 4+12= 16
  */
 public class Task14 implements Task {
 
     /**
-     *
      * @param n count of posts
      * @param k count of colors
      * @return the number of ways of painting the fence such that at most 2 adjacent posts have the same color.

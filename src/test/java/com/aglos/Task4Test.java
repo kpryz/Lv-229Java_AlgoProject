@@ -9,6 +9,6 @@ public class Task4Test {
     @Test
     public void testForChecking() {
         int arr[] = {3, 4, 7, 8, 9};
-        assertEquals(3,Task4.runTaskFour(arr));
+        assertEquals(3, Task4.runTaskFour(arr));
     }
 }

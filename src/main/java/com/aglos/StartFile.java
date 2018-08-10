@@ -8,9 +8,10 @@ import java.util.Scanner;
 
 public class StartFile {
     public static final int TASK_COUNT = 14;
+
     public static void main(String[] args) {
 
-        Task5 task5=new Task5();
+        Task5 task5 = new Task5();
         task5.solveTask();
         Map<Integer, Task> tasks = new HashMap<Integer, Task>();
         int i = 1;
@@ -37,14 +38,14 @@ public class StartFile {
                 System.out.println("You wrote wrong number, do you want to try again?");
                 System.out.println("To try again type 1");
             }
-            try{
+            try {
                 tasks.get(inputNumber).solveTask();
-            }catch (Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
             }
 
             System.out.println("If you want to continue please type 1");
-        }while (in.nextInt() == 1);
+        } while (in.nextInt() == 1);
 
 
     }

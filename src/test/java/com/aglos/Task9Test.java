@@ -24,8 +24,8 @@ public class Task9Test {
     }
 
     @Test(expected = IndexOutOfBoundsException.class)
-    public void bigNumbersTestForMaxTasks(){
-        int n= 100000;
+    public void bigNumbersTestForMaxTasks() {
+        int n = 100000;
         int[] low = {123, 54, 432, 543, 323};
         int[] high = {343, 612, 843, 743, 623};
         assertEquals(20, Task9.maxTasks(high, low, n));

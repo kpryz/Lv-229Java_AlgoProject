@@ -19,6 +19,6 @@ public class Task12Test {
 
     @Test(expected = ClassCastException.class)
     public void ClassCastExceptionTest() {
-        Assert.assertEquals("0",Task12.waysOfTailing(0,0));
+        Assert.assertEquals("0", Task12.waysOfTailing(0, 0));
     }
 }

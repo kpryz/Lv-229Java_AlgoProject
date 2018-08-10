@@ -9,7 +9,7 @@ public class Task8Test {
 
 
     @Test
-    public void standartTest(){
+    public void standartTest() {
         assertEquals(2, Task8.catalanDP(4));
     }
 }

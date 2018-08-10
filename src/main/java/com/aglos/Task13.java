@@ -1,9 +1,9 @@
 /*
-* Made by Oleh Krutiak
+ * Made by Oleh Krutiak
  */
 
 package com.aglos;/*
-* Code produced by Oleh Krutiak.
+ * Code produced by Oleh Krutiak.
  */
 
 import java.util.Scanner;

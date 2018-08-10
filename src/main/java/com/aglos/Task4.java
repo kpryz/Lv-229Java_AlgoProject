@@ -7,12 +7,13 @@ import java.util.Scanner;
  * Author: Mykhailo Dzhura
  */
 
-public class Task4 implements Task{
+public class Task4 implements Task {
 
     /**
      * ArrayList for the longest query row
      */
     private static ArrayList<Integer> longestQueryList = new ArrayList<Integer>();
+
     /**
      * Main function
      *
@@ -25,7 +26,7 @@ public class Task4 implements Task{
 //        for (String retval : numbers.split(",")) {
 //            nums.add(Integer.valueOf(retval));
 //        }
-        for (int i=0;i<numbers.length;i++){
+        for (int i = 0; i < numbers.length; i++) {
             nums.add(numbers[i]);
         }
         ArrayList<ArrayList> listOfArray = new ArrayList<ArrayList>();
@@ -77,7 +78,7 @@ public class Task4 implements Task{
         for (int i = 0; i < arr.length; i++) {
             arr[i] = finalList.get(i).intValue();
             longestQueryList.add(arr[i]);
-           // System.out.println("Our array:" + arr[i]);
+            // System.out.println("Our array:" + arr[i]);
         }
 
 //        int[] corectArr= new int[1];
@@ -97,15 +98,15 @@ public class Task4 implements Task{
         System.out.println("Insert array elements:");
 
         for (int i = 0; i < size; i++) {
-            System.out.print("Array element["+(i+1)+"]:");
+            System.out.print("Array element[" + (i + 1) + "]:");
             array[i] = input.nextInt();
         }
 
-        System.out.println("The longest query have size:"+runTaskFour(array));
+        System.out.println("The longest query have size:" + runTaskFour(array));
         System.out.print("This query contain those integers: ");
-        for (int e:
-                longestQueryList){
-            System.out.print(e+"; ");
+        for (int e :
+                longestQueryList) {
+            System.out.print(e + "; ");
         }
         System.out.println();
 

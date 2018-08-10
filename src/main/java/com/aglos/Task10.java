@@ -22,7 +22,7 @@ public class Task10 implements Task {
      */
 
     @Override
-    public void solveTask() throws  NullPointerException {
+    public void solveTask() throws NullPointerException {
         System.out.println("Enter stirng to check max polindrome value : ");
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
@@ -36,7 +36,7 @@ public class Task10 implements Task {
         if ((str == null) || (str.equals(""))) {
             throw new NullPointerException("String is empty or has not been initialized");
         } else {
-            System.out.println( "Ways of covering floor : " + Task10.getPolindromeSequense(str));
+            System.out.println("Ways of covering floor : " + Task10.getPolindromeSequense(str));
         }
 
     }

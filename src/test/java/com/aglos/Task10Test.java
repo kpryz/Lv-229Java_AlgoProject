@@ -14,8 +14,8 @@ public class Task10Test {
     }
 
     @Test(expected = NullPointerException.class)
-    public void NullPointerTest(){
-        Assert.assertEquals("String is empty or has not been initialized",Task10.getPolindromeSequense(""));
+    public void NullPointerTest() {
+        Assert.assertEquals("String is empty or has not been initialized", Task10.getPolindromeSequense(""));
     }
 
 

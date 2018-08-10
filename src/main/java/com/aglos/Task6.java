@@ -2,11 +2,12 @@ package com.aglos;
 /*
  * Author: Volodymyr Fuks
  */
+
 import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Task6 implements Task{
+public class Task6 implements Task {
     /**
      * Solving task "Ways to write n as sum of two or more positive integers"
      * Check input params
