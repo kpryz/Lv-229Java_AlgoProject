@@ -56,6 +56,9 @@ public class Task3 implements Task{
     @Override
     public void solveTask() {
         Scanner scan = new Scanner(System.in);
+        System.out.println(
+                "Next method finds which is the member of position (n) in our Jacobstal row."
+        );
         System.out.print("Enter your number: ");
         int s = scan.nextInt();
         runTaskThree(s);
