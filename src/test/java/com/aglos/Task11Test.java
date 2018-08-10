@@ -9,6 +9,5 @@ public class Task11Test {
     @Test
     public void countFriendsPairingsTest() {
         assertTrue(Task11.countFriendsPairings(3)==4);
-
     }
 }

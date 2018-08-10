@@ -48,7 +48,7 @@ public class Task10 implements Task {
      *
      * @param str is an instance of String class
      */
-    private static int getPolindromeSequense(String str) throws NullPointerException {
+    static int getPolindromeSequense(String str) throws NullPointerException {
 
         int[][] subsiquenceResults = new int[str.length()][str.length()];
 
